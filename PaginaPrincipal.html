@@ -1,0 +1,196 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Ongs</title>
+    <script>
+        function pesquisaLista() {
+            let input = document.getElementById('pesquisa').value.toLowerCase();
+
+            let items = document.querySelectorAll('#minhaLista li');
+
+            items.forEach(item => {
+                if (item.innerHTML.toLowerCase().indexOf(input) > -1) {
+                    item.style.display = "";
+                }
+                else {
+                    item.style.display = "none";
+                }
+            })
+        }
+    </script>
+</head>
+<body>
+    <h1 class="titulo" id="titulo">Lista de Ongs</h1>
+    <input class="input" id="pesquisa" onkeyup="pesquisaLista()" placeholder="Digite o nome da ONG desejada...">
+    <div class="containerList">
+    <ul class="lista" id="minhaLista">
+        <li onclick="window.location.href='http://www.graacc.org.br'" >GRAACC (Grupo de Apoio ao Adolescente e à Criança com Câncer)</li>
+        <li onclick="window.location.href='https://www.aacd.org.br'">AACD (Associação de Assistência à Criança Deficiente)</li>
+        <li onclick="window.location.href='https://www.fundacaodorina.org.br'">Fundação Dorina Nowill para Cegos</li>
+        <li onclick="window.location.href='https://www.apaesp.org.br'">APAE São Paulo (Associação de Pais e Amigos dos Excepcionais)</li>
+        <li onclick="window.location.href='https://www.sosma.org.br'">SOS Mata Atlântica</li>
+        <li onclick="window.location.href='http://www.amhd.org.br'">Associação Maria Helen Drexel</li>
+        <li onclick="window.location.href='https://www.institutoayrtonsenna.org.br'">Instituto Ayrton Senna</li>
+        <li onclick="window.location.href='https://www.cruzvermelha.org.br'">Cruz Vermelha Brasileira - Filial São Paulo</li>
+        <li onclick="window.location.href='http://www.aacc.org.br'">Associação de Apoio à Criança com Câncer (AACC)</li>
+        <li onclick="window.location.href='https://www.casahope.org.br'">Casa Hope</li>
+        <li onclick="window.location.href='https://www.grupotmo.org.br'">Grupo TMO (Transplante de Medula Óssea)</li>
+        <li onclick="window.location.href='https://www.amigosdobem.org'">Amigos do Bem</li>
+        <li onclick="window.location.href='https://www.arrastao.org.br'">Projeto Arrastão</li>
+        <li onclick="window.location.href='https://www.fundacaojulita.org.br'">Fundação Julita</li>
+        <li onclick="window.location.href='https://www.aapc.org.br'">Associação de Apoio à Pessoa com Câncer (AAPC)</li>
+        <li onclick="window.location.href='https://www.cruzverde.org.br'">Associação Cruz Verde</li>
+        <li onclick="window.location.href='https://www.larescolacairbarschutel.org.br'">Lar Escola Cairbar Schutel</li>
+        <li onclick="window.location.href='https://www.verdescola.org.br'">Instituto Verdescola</li>
+        <li onclick="window.location.href='https://www.casaronald.org.br'">Casa Ronald McDonald São Paulo</li>
+        <li onclick="window.location.href='https://www.socioambiental.org'">Instituto Socioambiental (ISA)</li>
+        <li onclick="window.location.href='http://www.asjm.org.br'">Associação São Joaquim de Apoio à Maturidade</li>
+        <li onclick="window.location.href='https://www.fundacaofe.org.br'">Fundação Fé e Alegria do Brasil</li>
+        <li onclick="window.location.href='https://www.hospitaldeamor.com.br'">Hospital de Amor (Hospital de Câncer de Barretos)</li>
+        <li onclick="window.location.href='https://www.pivi.org.br'">Associação PIVI - Projeto de Incentivo à Vida</li>
+        <li onclick="window.location.href='https://www.institutoterra.org'">Instituto Terra</li>
+        <li onclick="window.location.href='https://www.abrinq.org.br'">Fundação ABRINQ pelos Direitos da Criança e do Adolescente</li>
+        <li onclick="window.location.href='https://www.gaccrp.org.br'">GACC (Grupo de Apoio à Criança com Câncer) de Ribeirão Preto</li>
+        <li onclick="window.location.href='https://www.casadavid.org.br'">Casa de David</li>
+        <li onclick="window.location.href='https://www.associacaoanima.org.br'">Associação Civil Anima</li>
+        <li onclick="window.location.href='https://www.ama.org.br'">Amigos do Autista (AMA)</li>
+        <li onclick="window.location.href='https://www.monteazul.org.br'">Associação Comunitária Monte Azul</li>
+        <li onclick="window.location.href='https://www.ameo.org.br'">Ameo - Associação da Medula Óssea do Estado de São Paulo</li>
+        <li onclick="window.location.href='https://www.lardascriancas.org.br'">Lar das Crianças da Congregação Israelita Paulista</li>
+        <li onclick="window.location.href='https://www.aahc.org.br'">Associação dos Amigos do Hospital das Clínicas (AAHC)</li>
+        <li onclick="window.location.href='https://www.amigosdavida.org'">Amigos da Vida</li>
+        <li onclick="window.location.href='https://www.vivaedeixeviver.org.br'">Associação Viva e Deixe Viver</li>
+        <li onclick="window.location.href='https://www.vidajovem.org.br'">Associação Vida Jovem</li>
+        <li onclick="window.location.href='https://www.santamarcelina.org'">Hospital Santa Marcelina</li>
+        <li onclick="window.location.href='https://www.asa.org.br'">Associação Santo Agostinho</li>
+        <li onclick="window.location.href='https://www.casadozezinho.org.br'">Casa do Zezinho</li>
+        <li onclick="window.location.href='https://www.ame.org.br'">Associação Amigos Metroviários dos Excepcionais (AME)</li>
+        <li onclick="window.location.href='https://www.aaccsp.org.br'">AACC (Associação de Apoio à Criança com Câncer) de São Paulo</li>
+        <li onclick="window.location.href='https://www.ceap.org.br'">CEAP (Centro Educacional Assistencial Profissionalizante)</li>
+        <li onclick="window.location.href='https://www.nucleobatuira.org.br'">Núcleo Batuíra de Desenvolvimento Humano</li>
+        <li onclick="window.location.href='https://www.casadosvelhinhos.org.br'">Casa dos Velhinhos de Ondina Lobo</li>
+        <li onclick="window.location.href='https://www.cren.org.br'">Cren (Centro de Recuperação e Educação Nutricional)</li>
+        <li onclick="window.location.href='https://www.goldeletra.org.br'">Fundação Gol de Letra</li>
+        <li onclick="window.location.href='https://www.casademaria.org.br'">Casa de Maria - Assistência Social</li>
+        <li onclick="window.location.href='https://www.despertar.org.br'">Associação Comunitária Despertar</li>
+        <li onclick="window.location.href='https://www.hcancerbarretos.com.br'">Hospital de Câncer de Barretos</li>
+        <li onclick="window.location.href='https://www.larninhodepaz.org.br'">Lar da Criança Ninho de Paz</li>
+        <li onclick="window.location.href='https://www.hospitalsaopaulo.org.br'">Hospital São Paulo - Hospital Universitário da UNIFESP</li>
+        <li onclick="window.location.href='https://www.ansp.org.br'">Associação Beneficente Nossa Senhora da Piedade</li>
+        <li onclick="window.location.href='https://www.gaccsor.org.br'">Grupo de Apoio ao Adolescente e à Criança com Câncer de Sorocaba</li>
+        <li onclick="window.location.href='https://www.amigosdavida.org'">Sociedade Amigos da Vida</li>
+        <li onclick="window.location.href='https://www.casadocaminhomeimei.org.br'">Casa do Caminho Meimei</li>
+        <li onclick="window.location.href='https://www.olgakos.org.br'">Instituto Olga Kos de Inclusão Cultural</li>
+        <li onclick="window.location.href='https://www.mariadapenha.org.br'">Instituto Maria da Penha</li>
+        <li onclick="window.location.href='https://www.projetoguri.org.br'">Associação Amigos do Projeto Guri</li>
+        <li onclick="window.location.href='https://www.horizontes.org.br'">Associação Horizontes</li>
+        <li onclick="window.location.href='https://www.caminhosparajesus.org.br'">Núcleo Assistencial Caminhos para Jesus</li>
+        <li onclick="window.location.href='https://www.hospitalpequenoprincipe.org.br'">Hospital Pequeno Príncipe</li>
+        <li onclick="window.location.href='https://www.cruzdemalta.org.br'">Associação Cruz de Malta</li>
+        <li onclick="window.location.href='https://www.abcc.org.br'">Associação Bauruense de Combate ao Câncer</li>
+        <li onclick="window.location.href='https://www.einstein.br'">Sociedade Beneficente Israelita Brasileira Albert Einstein</li>
+        <li onclick="window.location.href='https://www.lardascriancas.org.br'">Lar das Crianças da CIP</li>
+        <li onclick="window.location.href='https://www.monteazul.org.br'">Associação Comunitária Monte Azul</li>
+        <li onclick="window.location.href='https://www.saojoaquim.org.br'">Associação Beneficente Irmã Rosália</li>
+        <li onclick="window.location.href='https://www.apaejundiai.org.br'">APAE de Jundiaí</li>
+        <li onclick="window.location.href='https://www.scrosoppi.org.br'">Associação Mantenedora Padre Luiz Scrosoppi</li>
+        <li onclick="window.location.href='https://www.svpc.org.br'">Associação Filantrópica São Vicente de Paulo</li>
+        <li onclick="window.location.href='http://www.amhd.org.br'">Associação Maria Helen Drexel</li>
+        <li onclick="window.location.href='https://www.avilanova.org.br'">Associação União de Vila Nova</li>
+        <li onclick="window.location.href='https://www.hospitalportugues.com.br'">Hospital Beneficente Português de Pelotas</li>
+    </ul>
+    </div>
+</body>
+<style>
+    .input {
+        border: 1px solid;
+        border-radius: 10px;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        left: 50%;
+        top: 15%;
+        width: 30%;
+        height: 5%;
+        padding-left: 10px;
+        font-size: 15;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    }
+
+    .input:focus {
+        width: 35%;
+        transition: ease 0.5s;
+    }
+
+    .input:not(:focus) {
+        width: 30%;
+        transition: ease 0.5s;
+    }
+
+    .titulo {
+        transform: translate(-50%, -50%);
+        left: 50%;
+        position: absolute;
+        color: white;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        text-shadow: 1px 2px 1px black;
+    }
+
+    body {
+        background-image: url(/img/43091.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        backdrop-filter: blur(1px);
+        z-index: 0;
+    }
+
+    body:hover {
+        backdrop-filter: blur(5px);
+        transition: ease 0.3s;
+    }
+
+    body:not(:hover) {
+        transition: ease 0.3s;
+    }
+
+    .lista {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        padding: 8px;
+        text-align: left;
+        border-radius: 5px;
+        border: 1px solid;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+    }
+
+    li:not(.hidden) {
+        border: 1px solid #ddd;
+        margin-top: -1px;
+    }
+
+    .containerList {
+        max-height: 300px; 
+        overflow-y: scroll; 
+        border: 2px solid #ddd;
+        padding: 8px;
+        width: 75%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 50%;
+        position: absolute;
+        border-radius: 10px;
+        background-color: white;
+        z-index: 1;
+    }
+
+    ul {
+        border-radius: 5px;
+        border: 0px solid;
+    }
+</style>
+</html>

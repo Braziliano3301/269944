@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Ong's</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #searchBar {
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            position: relative;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 8px;
+            text-align: left;
+        }
+        li:not(.hidden) {
+            border: 1px solid #ddd;
+            margin-top: -1px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista de Ongs</h1>
+    <input type="text" id="searchBar" onkeyup="searchList()" placeholder="Digite o nome da Ong desejada...">
+    <P>Clique para obter a lista com as Ong's</P>
+    <details>
+        <summary>Lista de Ong's</summary>
+    <ul id="myUL">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Cherry</li>
+        <li>Date</li>
+        <li>Elderberry</li>
+        <li>Fig</li>
+        <li>Grape</li>
+    </ul>
+    </details>
+
+    <script>
+        function searchList() {
+            // Get the value of the input field
+            let input = document.getElementById('searchBar').value.toLowerCase();
+            
+            // Get all list items
+            let items = document.querySelectorAll('#myUL li');
+
+            // Loop through all list items and hide those who don't match the search query
+            items.forEach(item => {
+                if (item.innerHTML.toLowerCase().indexOf(input) > -1) {
+                    item.style.display = "";
+                } else {
+                    item.style.display = "none";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
